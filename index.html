@@ -212,13 +212,8 @@ section{padding:96px 0}
 
 /* COMMISSIONS */
 .commission{background:var(--paper2)}
-.com-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.com{border:1px solid var(--line);border-radius:4px;padding:24px;background:#fff}
-.com .n{color:var(--green);font-weight:600;font-size:13px;letter-spacing:.1em}
-.com h4{font-size:18px;margin:10px 0 8px}
-.com p{font-size:14px;color:#3d3d38}
-.com-cta{margin-top:30px;font-size:15px;color:#3d3d38}
-.com-cta a{color:var(--green);border-bottom:1px solid var(--green)}
+.com-cta{margin-top:28px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.com-cta span{font-size:14px;color:var(--muted)}
 
 /* COLLECTOR LIST */
 .list-band{border-top:1px solid var(--line);margin-top:46px;padding-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
@@ -258,11 +253,10 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
   .menu-btn{display:block}
   .nav-links.show{display:flex;position:absolute;top:72px;left:0;right:0;flex-direction:column;background:var(--paper);padding:20px 28px;gap:18px;border-bottom:1px solid var(--line)}
   .span2{grid-column:span 2}
-  .com-grid{grid-template-columns:1fr 1fr}
   .list-band{grid-template-columns:1fr}
 }
 @media(max-width:540px){
-  .gallery,.credits,.stat-row,.com-grid{grid-template-columns:1fr}
+  .gallery,.credits,.stat-row{grid-template-columns:1fr}
   .span2{grid-column:span 1}
   .statement .meta{gap:28px}
 }
@@ -418,19 +412,14 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
 
 <section id="commissions" class="commission">
   <div class="wrap">
-    <div class="sec-head reveal">
+    <div class="sec-head reveal" style="margin-bottom:0">
       <span class="num">04 / Commissions</span>
       <h2>Private commissions</h2>
-      <p>A collector may propose a session of personal or historical significance &mdash; a founding, a listing, a market event, a decisive trade. The session is the subject; the composition remains the artist&rsquo;s.</p>
-    </div>
-    <div class="com-grid">
-      <div class="com reveal"><div class="n">01</div><h4>Propose the session</h4><p>Any trading day with gold market data. Its significance is recorded in the work&rsquo;s documentation.</p></div>
-      <div class="com reveal"><div class="n">02</div><h4>Agree the scale</h4><p>Dimensions and price are set at the outset, in line with the artist&rsquo;s published pricing.</p></div>
-      <div class="com reveal"><div class="n">03</div><h4>Preview the session study</h4><p>The collector receives the source session and the artist&rsquo;s study notes before painting begins.</p></div>
-      <div class="com reveal"><div class="n">04</div><h4>Receive the work</h4><p>Signed original with certificate of authenticity and the archived source chart.</p></div>
-    </div>
-    <div class="com-cta reveal">
-      <span>A small number of private commissions are accepted each year, <a href="#contact" data-inquire="Commission">by inquiry</a>.</span>
+      <p>A collector proposes a gold session of personal or historical significance; Lavoy paints it. Scale and price are agreed at the outset, the composition remains the artist&rsquo;s, and the finished work arrives signed with a certificate of authenticity and its source chart.</p>
+      <div class="com-cta">
+        <a class="btn btn-solid" href="#contact" data-inquire="Commission">Contact the artist</a>
+        <span>A small number of commissions are accepted each year.</span>
+      </div>
     </div>
   </div>
 </section>
