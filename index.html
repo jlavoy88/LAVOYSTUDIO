@@ -3,8 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jorge Lavoy — Artist · Futures Trader · Actor</title>
-<meta name="description" content="Jorge Lavoy (b. 1988, Havana) is a multidisciplinary artist and professional futures trader based in Florida. Visual art, the Market Sentiment series, futures trading, and an 18-year career in Cuban television and cinema.">
+<title>Jorge Lavoy — Market Sentiment · Contemporary Artist, Florida</title>
+<meta name="description" content="Jorge Lavoy (b. 1988, Havana) is a Cuban-born painter based in Florida. His Market Sentiment series turns real gold futures sessions into geometric paintings in gold on a dark ground. Originals, commissioned sessions, exhibitions.">
+<link rel="canonical" href="https://www.lavoystudio.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jorge Lavoy — Market Sentiment">
+<meta property="og:description" content="Paintings made from real gold futures sessions. Havana-trained artist, based in Florida.">
+<meta property="og:url" content="https://www.lavoystudio.com/">
+<meta property="og:image" content="https://www.lavoystudio.com/images/gold-mar4.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Jorge Lavoy",
+  "alternateName":"Jorge Ricardo Lavoy Miguel",
+  "birthDate":"1988",
+  "birthPlace":{"@type":"Place","name":"Havana, Cuba"},
+  "jobTitle":"Visual artist",
+  "url":"https://www.lavoystudio.com/",
+  "image":"https://www.lavoystudio.com/images/portrait.jpg",
+  "alumniOf":[{"@type":"EducationalOrganization","name":"Escuela Nacional de Arte (ENA), Havana"},{"@type":"EducationalOrganization","name":"Manuel Saumell Music School, Havana"}],
+  "knowsAbout":["Painting","Contemporary art","Photography","Film","Gold futures"],
+  "sameAs":["https://www.instagram.com/lavoystudio"]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -171,6 +194,46 @@ section{padding:96px 0}
 .socials a{font-size:14px;font-weight:500;color:var(--green);border-bottom:1px solid var(--green);padding-bottom:2px;transition:.2s}
 .socials a:hover{opacity:.7}
 
+.cform select{font-family:'Inter',sans-serif;font-size:15px;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:4px;padding:12px 14px}
+.cform select:focus{outline:none;border-color:var(--green)}
+
+/* AVAILABILITY + INQUIRY */
+.work .label .avail{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--green);font-weight:600;margin-top:8px}
+.work-cta{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.work-cta p{font-size:14px;color:var(--muted)}
+.lb .inner .cap .btn{margin-top:16px;border-color:#fff;color:#fff;background:transparent}
+.lb .inner .cap .btn:hover{background:#fff;color:var(--ink)}
+
+/* METHOD */
+.steps{list-style:none;counter-reset:s;margin:4px 0 26px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.steps li::before{content:counter(s,decimal-leading-zero);font-weight:600;color:var(--green);font-size:14px;padding-top:2px}
+.steps li b{font-weight:600}
+
+/* COMMISSIONS */
+.commission{background:var(--ink);color:var(--paper)}
+.commission .sec-head h2{color:#fff}
+.commission .sec-head p{color:#bdbdb4}
+.commission .num{color:var(--gold-soft)}
+.com-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.com{border:1px solid #2c2c2c;border-radius:4px;padding:24px;background:#1c1c1c}
+.com .n{color:var(--gold-soft);font-weight:600;font-size:13px;letter-spacing:.1em}
+.com h4{color:#fff;font-size:18px;margin:10px 0 8px}
+.com p{font-size:14px;color:#b6b6ac}
+.com-cta{margin-top:34px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.com-cta .btn{border-color:var(--gold-soft);background:var(--gold-soft);color:var(--ink)}
+.com-cta .btn:hover{background:#fff;border-color:#fff}
+.com-cta span{font-size:14px;color:#a9a99f}
+
+/* COLLECTOR LIST */
+.list-band{border-top:1px solid var(--line);margin-top:46px;padding-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+.list-band h3{font-size:22px;margin-bottom:6px}
+.list-band p{font-size:14.5px;color:#3d3d38}
+.lform{display:flex;gap:10px;flex-wrap:wrap}
+.lform input{flex:1 1 220px;font-family:'Inter',sans-serif;font-size:15px;background:#fff;border:1px solid var(--line);border-radius:4px;padding:12px 14px}
+.lform input:focus{outline:none;border-color:var(--green)}
+.lform button{cursor:pointer}
+
 /* FOOTER */
 footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
 .foot{display:flex;justify-content:space-between;align-items:flex-start;gap:30px;flex-wrap:wrap}
@@ -178,7 +241,7 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
 .foot-logo img{height:26px;width:auto;display:block}
 .foot .fdisc{font-size:11.5px;color:#83837a;max-width:46em;margin-top:26px;line-height:1.6}
 .foot .copy{font-size:12.5px;color:#9a9a90;margin-top:18px}
-.foot-links{display:flex;gap:22px;font-size:13px}
+.foot-links{display:flex;flex-wrap:wrap;gap:12px 22px;font-size:13px}
 .foot-links a:hover{color:#fff}
 
 .reveal{opacity:0;transform:translateY(22px);transition:.7s cubic-bezier(.2,.7,.2,1)}
@@ -194,15 +257,17 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
 .lb .close{position:absolute;top:22px;right:28px;color:#fff;font-size:30px;cursor:pointer;line-height:1}
 
 @media(max-width:880px){
-  .hero-grid,.feature-grid,.trade-grid,.about-grid,.contact-grid{grid-template-columns:1fr;gap:38px}
+  .hero-grid,.feature-grid,.trade-grid,.about-grid,.contact-grid,.exh-grid{grid-template-columns:1fr;gap:38px}
   .gallery,.credits{grid-template-columns:1fr 1fr}
   .nav-links{display:none}
   .menu-btn{display:block}
   .nav-links.show{display:flex;position:absolute;top:72px;left:0;right:0;flex-direction:column;background:var(--paper);padding:20px 28px;gap:18px;border-bottom:1px solid var(--line)}
   .span2{grid-column:span 2}
+  .com-grid{grid-template-columns:1fr 1fr}
+  .list-band{grid-template-columns:1fr}
 }
 @media(max-width:540px){
-  .gallery,.credits,.stat-row{grid-template-columns:1fr}
+  .gallery,.credits,.stat-row,.com-grid{grid-template-columns:1fr}
   .span2{grid-column:span 1}
   .statement .meta{gap:28px}
 }
@@ -212,18 +277,18 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
 
 <header id="hdr">
   <div class="wrap nav">
-    <a class="brand" href="#top" aria-label="LAVOY GROUP home">
+    <a class="brand" href="#top" aria-label="Jorge Lavoy home">
       <svg class="brand-mark" viewBox="-60 -60 700 440" aria-hidden="true"><g fill="none" stroke="#0d5e04" stroke-width="120"><polyline points="60 0 60 260.11 420 260.11 420 80.11 240 80.11"/><polyline points="580 320.33 580 60.11 220 60.11 220 240.11 400 240.11"/></g></svg>
-      <span class="brand-name">LAVOY GROUP</span>
+      <span class="brand-name">Jorge Lavoy</span>
     </a>
     <button class="menu-btn" id="menuBtn" aria-label="Menu">&#9776;</button>
     <nav class="nav-links" id="navLinks">
       <a href="#work">Work</a>
+      <a href="#method">Method</a>
+      <a href="#commissions">Commissions</a>
       <a href="#exhibitions">Exhibitions</a>
-      <a href="#trading">Trading</a>
-      <a href="#screen">Stage &amp; Screen</a>
       <a href="#about">About</a>
-      <a class="nav-cta" href="#contact">Contact</a>
+      <a class="nav-cta" href="#contact">Inquire</a>
     </nav>
   </div>
 </header>
@@ -234,11 +299,12 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
     <div class="reveal">
       <span class="eyebrow">Havana &middot; 1988 &mdash; Florida</span>
       <h1>Jorge <em>Lavoy</em></h1>
+      <p class="lead">Each painting is a real gold futures session &mdash; the fear, conviction and reversal of thousands of traders, distilled into geometry.</p>
       <div class="hero-cta">
         <a class="btn btn-solid" href="#work">View the work</a>
-        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        <a class="btn btn-ghost" href="#commissions">Commission a session</a>
       </div>
-      <div class="hero-loc">Multidisciplinary practice &mdash; painting, photography, film, installation &amp; sculpture &middot; Gold futures specialist</div>
+      <div class="hero-loc">Painter &middot; Trained at the Escuela Nacional de Arte, Havana &middot; Based in Florida</div>
     </div>
     <figure class="reveal">
       <div class="hero-art"><img src="images/portrait.jpg" alt="Portrait of Jorge Lavoy" style="width:100%;height:100%;object-fit:cover"></div>
@@ -252,42 +318,99 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
     <div class="sec-head reveal">
       <span class="num">01 / Selected Work</span>
       <h2>Market Sentiment</h2>
-      <p>Each work begins with a real gold session &mdash; a moment of structure, reaction, or reversal &mdash; distilled into geometric form in gold on a dark ground. Click any piece to view it larger.</p>
+      <p>Each work begins with a real gold session &mdash; a moment of structure, reaction, or reversal &mdash; distilled into geometric form in gold on a dark ground. Each title carries the date of the session it records. Click any piece to view it larger.</p>
     </div>
     <div class="gallery">
       <div class="work reveal span2" data-img="images/gold-mar4.jpg" data-title="Gold — March 4, 2025" data-year="Acrylic on canvas · 10:30 AM UTC-4">
         <img class="canvas" src="images/gold-mar4.jpg" alt="Gold — March 4, 2025" loading="lazy">
         <span class="badge">Featured</span>
-        <div class="label"><h4>Gold &mdash; March 4, 2025</h4><div class="yr">Acrylic on canvas &middot; 10:30 AM session</div></div>
+        <div class="label"><h4>Gold &mdash; March 4, 2025</h4><div class="yr">Acrylic on canvas &middot; 10:30 AM session</div><div class="avail">Inquire for availability</div></div>
       </div>
       <div class="work reveal" data-img="images/gold-feb27.jpg" data-title="Break of Structure — Feb 27, 2025" data-year="Acrylic on canvas · 10:00 AM">
         <img class="canvas" src="images/gold-feb27.jpg" alt="Break of Structure — Feb 27, 2025" loading="lazy">
-        <div class="label"><h4>Break of Structure</h4><div class="yr">Feb 27, 2025 &middot; acrylic on canvas</div></div>
+        <div class="label"><h4>Break of Structure</h4><div class="yr">Feb 27, 2025 &middot; acrylic on canvas</div><div class="avail">Inquire for availability</div></div>
       </div>
       <div class="work reveal" data-img="images/gold-may20.jpg" data-title="Gold — May 20, 2025" data-year="Acrylic on canvas · 10:00 AM UTC-4">
         <img class="canvas" src="images/gold-may20.jpg" alt="Gold — May 20, 2025" loading="lazy">
-        <div class="label"><h4>Ascension</h4><div class="yr">May 20, 2025 &middot; acrylic on canvas</div></div>
+        <div class="label"><h4>Ascension</h4><div class="yr">May 20, 2025 &middot; acrylic on canvas</div><div class="avail">Inquire for availability</div></div>
       </div>
       <div class="work reveal" data-img="images/gold-mar4-ny.jpg" data-title="Gold — March 4, 2025, NY Session" data-year="Acrylic on canvas">
         <img class="canvas" src="images/gold-mar4-ny.jpg" alt="Gold — March 4, 2025, NY Session" loading="lazy">
-        <div class="label"><h4>NY Session</h4><div class="yr">March 4, 2025 &middot; acrylic on canvas</div></div>
+        <div class="label"><h4>NY Session</h4><div class="yr">March 4, 2025 &middot; acrylic on canvas</div><div class="avail">Inquire for availability</div></div>
       </div>
       <div class="work reveal" data-img="images/gold-may23.jpg" data-title="Gold — May 23, 2025" data-year="Acrylic on canvas · 10:17 AM UTC-4">
         <img class="canvas" src="images/gold-may23.jpg" alt="Gold — May 23, 2025" loading="lazy">
-        <div class="label"><h4>Break-Even</h4><div class="yr">May 23, 2025 &middot; acrylic on canvas</div></div>
+        <div class="label"><h4>Break-Even</h4><div class="yr">May 23, 2025 &middot; acrylic on canvas</div><div class="avail">Inquire for availability</div></div>
       </div>
       <div class="work reveal" data-img="images/gold-jun5.jpg" data-title="Unemployment Claims Reaction — June 5, 2025" data-year="Acrylic on canvas · NY session">
         <img class="canvas" src="images/gold-jun5.jpg" alt="Unemployment Claims Reaction — June 5, 2025" loading="lazy">
-        <div class="label"><h4>Claims Reaction</h4><div class="yr">June 5, 2025 &middot; acrylic on canvas</div></div>
+        <div class="label"><h4>Claims Reaction</h4><div class="yr">June 5, 2025 &middot; acrylic on canvas</div><div class="avail">Inquire for availability</div></div>
+      </div>
+    </div>
+    <div class="work-cta reveal">
+      <a class="btn btn-solid" href="#contact" data-inquire="Acquisition">Inquire about a work</a>
+      <p>Original acrylics on canvas. Each work ships with a signed certificate of authenticity.</p>
+    </div>
+  </div>
+</section>
+
+<section id="method" class="feature">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="num">02 / The Method</span>
+      <h2>From session to canvas</h2>
+      <p>Lavoy has traded gold professionally since 2019 &mdash; the XAU/USD spot market and the GC futures contract. The sessions he trades are the raw material for the paintings: a market's collective emotion, recorded as structure.</p>
+    </div>
+    <div class="trade-grid">
+      <div class="reveal">
+        <ol class="steps">
+          <li><div><b>The session.</b> A single trading window &mdash; an open, a news release, a reversal &mdash; chosen for the tension it held.</div></li>
+          <li><div><b>The structure.</b> Highs, lows, breaks and pauses are read from the chart and reduced to their geometry.</div></li>
+          <li><div><b>The canvas.</b> That geometry is painted by hand in gold on a dark ground, titled with the date and time of the session.</div></li>
+        </ol>
+        <ul class="approach">
+          <li><span></span><div><b>Rhythm over noise.</b> Where price pauses, accelerates and reverses.</div></li>
+          <li><span></span><div><b>Sentiment as form.</b> Collective fear and conviction made visible.</div></li>
+          <li><span></span><div><b>A record, not a prediction.</b> Each painting documents a moment that already happened.</div></li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <div class="analysis">
+          <img class="chart" src="images/gold-jun5.jpg" alt="Claims Reaction — June 5, 2025, acrylic on canvas" style="width:100%;display:block">
+          <div class="cap">
+            <div class="t">Claims Reaction &mdash; June 5, 2025</div>
+            <div class="d">Painted from the gold session that followed the US unemployment claims release.</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="exhibitions" class="feature">
+<section id="commissions" class="commission">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="num">02 / Exhibitions</span>
+      <span class="num">03 / Commissions</span>
+      <h2>Commission a session</h2>
+      <p>Choose a date that mattered to you &mdash; a first trade, a company's IPO, a birth, an anniversary &mdash; and Lavoy paints the gold session of that day.</p>
+    </div>
+    <div class="com-grid">
+      <div class="com reveal"><div class="n">01</div><h4>Choose the date</h4><p>Any trading day with gold market data. Tell us why it matters; the story becomes part of the work's record.</p></div>
+      <div class="com reveal"><div class="n">02</div><h4>Choose the size</h4><p>From intimate to wall-scale. Pricing is set by size and quoted before any commitment.</p></div>
+      <div class="com reveal"><div class="n">03</div><h4>Approve the study</h4><p>You see the session study and composition before painting begins.</p></div>
+      <div class="com reveal"><div class="n">04</div><h4>Receive the work</h4><p>Signed original, certificate of authenticity, and the source chart of your session.</p></div>
+    </div>
+    <div class="com-cta reveal">
+      <a class="btn" href="#contact" data-inquire="Commission">Start a commission</a>
+      <span>Limited commissions each year.</span>
+    </div>
+  </div>
+</section>
+
+<section id="exhibitions">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="num">04 / Exhibitions</span>
       <h2>Solo &amp; group shows</h2>
       <p>Selected exhibitions across the United States, Cuba, Brazil, and Spain &mdash; from early photographic work in Havana to recent painting in Miami.</p>
     </div>
@@ -304,7 +427,7 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
       <div class="exh reveal">
         <h3>Group Shows</h3>
         <ul class="exlist">
-          <li><span class="y">2025</span><span class="v"><b>The New Gold Rush</b><span>Pan-American Art Project &middot; Miami, FL</span></span></li>
+          <li><span class="y">2025</span><span class="v"><b>The New Gold Rush</b><span>Pan American Art Projects &middot; Miami, FL</span></span></li>
           <li><span class="y">2017</span><span class="v"><b>Scope Miami Beach</b><span>Havana Art Gallery &middot; Miami, FL</span></span></li>
           <li><span class="y">2016</span><span class="v"><b>The Art of the Collection and more</b><span>Kendall Art Center &middot; Miami, FL</span></span></li>
           <li><span class="y">2016</span><span class="v"><b>Untitled @ 888</b><span>888 Biscayne Blvd &middot; Miami, FL</span></span></li>
@@ -319,44 +442,10 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
   </div>
 </section>
 
-<section id="trading">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="num">03 / Futures Trading</span>
-      <p>Alongside the studio practice, Lavoy has traded professionally since 2019, focused on gold &mdash; the spot instrument XAU/USD and the GC gold futures contract. The same sessions become the raw material for his paintings.</p>
-    </div>
-    <div class="trade-grid">
-      <div class="reveal">
-        <div class="stat-row">
-          <div class="stat"><div class="k">XAU/USD &middot; GC</div><div class="l">Instruments traded</div></div>
-          <div class="stat"><div class="k">$1.1M</div><div class="l">Proprietary trading capital</div></div>
-          <div class="stat"><div class="k">Since 2019</div><div class="l">Professional trading</div></div>
-          <div class="stat"><div class="k">Data-led</div><div class="l">Price-action methodology</div></div>
-        </div>
-        <ul class="approach">
-          <li><span></span><div><b>Rhythm over noise.</b> Reading where price pauses, accelerates and reverses across timeframes.</div></li>
-          <li><span></span><div><b>Sentiment mapping.</b> Translating collective fear and conviction into actionable structure.</div></li>
-          <li><span></span><div><b>Risk first.</b> Position sizing and defined risk as the foundation of every session.</div></li>
-        </ul>
-      </div>
-      <div class="reveal">
-        <div class="analysis">
-          <img class="chart" src="images/gold-jun5.jpg" alt="Gold session study — June 5, 2025" style="width:100%;display:block">
-          <div class="cap">
-            <div class="t">Gold &mdash; Unemployment Claims reaction, June 5, 2025</div>
-            <div class="d">A session translated into form. Live market commentary and trade reviews can be published here as a rolling feed.</div>
-          </div>
-        </div>
-        <div class="disclaimer"><b>Disclaimer:</b> Content in this section is for informational and illustrative purposes only and is not financial advice, a solicitation, or an offer to buy or sell any security or instrument. Trading futures carries substantial risk of loss. Figures shown are indicative ranges, not an offer of managed accounts.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="screen" class="screen">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="num">04 / Stage &amp; Screen</span>
+      <span class="num">05 / Stage &amp; Screen</span>
       <h2>A career in Cuban television &amp; cinema</h2>
       <p>From a 1998 debut as a child actor through leading roles in film, television drama, and national TV presenting &mdash; built on theater training at the Escuela Nacional de Arte (ENA), Havana.</p>
     </div>
@@ -381,7 +470,7 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
 <section id="about">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="num">05 / About</span>
+      <span class="num">06 / About</span>
       <h2>Jorge Ricardo Lavoy Miguel</h2>
     </div>
     <div class="about-grid">
@@ -396,7 +485,7 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
           <div class="tl"><div class="yr">2010</div><div class="ev">First solo show, <b>Habana-Mirror</b>, at Centro Gallego de La Habana.</div></div>
           <div class="tl"><div class="yr">2013</div><div class="ev">Founds the audiovisual production company <b>Next Art Project</b>.</div></div>
           <div class="tl"><div class="yr">2019</div><div class="ev">Solo show <b>Point of Entry</b>; begins his <b>professional trading career</b> in gold (XAU/USD &amp; GC futures).</div></div>
-          <div class="tl"><div class="yr">2025</div><div class="ev">Group show <b>The New Gold Rush</b>, Pan-American Art Project, Miami &mdash; uniting painting and gold-futures trading.</div></div>
+          <div class="tl"><div class="yr">2025</div><div class="ev">Group show <b>The New Gold Rush</b>, Pan American Art Projects, Miami &mdash; uniting painting and gold-futures trading.</div></div>
         </div>
         <div class="edu">
           <h3>Education</h3>
@@ -416,37 +505,58 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
 <section id="contact" class="contact">
   <div class="wrap contact-grid">
     <div class="reveal">
-      <span class="num">06 / Contact</span>
-      <h2>Let's talk</h2>
-      <p style="font-size:17px;color:#3d3d38;margin-bottom:22px">For exhibitions, acquisitions, press, collaborations, or trading inquiries.</p>
+      <span class="num">07 / Contact</span>
+      <h2>Inquire</h2>
+      <p style="font-size:17px;color:#3d3d38;margin-bottom:22px">For acquisitions, commissioned sessions, exhibitions and curatorial projects, and press. Studio visits by appointment.</p>
       <div style="font-size:14px;color:var(--muted)">Florida &middot; United States</div>
       <div class="socials"><a href="https://www.instagram.com/lavoystudio" target="_blank" rel="noopener">Instagram &mdash; @lavoystudio &rarr;</a></div>
     </div>
     <form class="reveal cform" id="contactForm">
       <label>Name<input type="text" name="name" required></label>
       <label>Email<input type="email" name="email" required></label>
+      <label>Inquiry
+        <select name="topic">
+          <option>Acquisition</option>
+          <option>Commission</option>
+          <option>Exhibition / curatorial</option>
+          <option>Press</option>
+          <option>Other</option>
+        </select>
+      </label>
       <label>Message<textarea name="message" rows="4" required></textarea></label>
-      <button type="submit" class="btn btn-solid">Send message</button>
+      <button type="submit" class="btn btn-solid">Send inquiry</button>
     </form>
+  </div>
+  <div class="wrap">
+    <div class="list-band reveal">
+      <div>
+        <h3>Collector list</h3>
+        <p>New works and commission openings go to the list first, before Instagram. A few emails a year.</p>
+      </div>
+      <form class="lform" id="listForm">
+        <input type="email" name="email" placeholder="Your email" required aria-label="Email">
+        <button type="submit" class="btn btn-solid">Join</button>
+      </form>
+    </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
     <div class="foot">
-      <a href="#top" aria-label="LAVOY GROUP" style="display:inline-flex">
+      <a href="#top" aria-label="Jorge Lavoy" style="display:inline-flex">
         <svg viewBox="-60 -60 700 440" style="height:30px" aria-hidden="true"><g fill="none" stroke="#2f8a23" stroke-width="120"><polyline points="60 0 60 260.11 420 260.11 420 80.11 240 80.11"/><polyline points="580 320.33 580 60.11 220 60.11 220 240.11 400 240.11"/></g></svg>
       </a>
       <div class="foot-links">
-        <a href="#work">Work</a><a href="#trading">Trading</a><a href="#screen">Screen</a><a href="#about">About</a><a href="#contact">Contact</a><a href="https://www.instagram.com/lavoystudio" target="_blank" rel="noopener">Instagram</a>
+        <a href="#work">Work</a><a href="#method">Method</a><a href="#commissions">Commissions</a><a href="#exhibitions">Exhibitions</a><a href="#screen">Screen</a><a href="#about">About</a><a href="#contact">Inquire</a><a href="https://www.instagram.com/lavoystudio" target="_blank" rel="noopener">Instagram</a>
       </div>
     </div>
-    <p class="fdisc">This website is a personal portfolio. Trading-related content is for informational purposes only and does not constitute financial advice or an offer of any kind. Trading futures involves significant risk. All artwork &copy; Jorge Lavoy.</p>
-    <p class="copy">&copy; <span id="yr"></span> Jorge Lavoy &middot; Lavoy Group. All rights reserved.</p>
+    <p class="fdisc">Artworks are based on historical market sessions and are not financial advice or a solicitation of any kind. All artwork and images &copy; Jorge Lavoy.</p>
+    <p class="copy">&copy; <span id="yr"></span> Jorge Lavoy &middot; LAVOY Studio. All rights reserved.</p>
   </div>
 </footer>
 
-<div class="lb" id="lb"><span class="close" id="lbClose">&times;</span><div class="inner"><div id="lbArt"></div><div class="cap"><h4 id="lbTitle"></h4><p id="lbYear"></p></div></div></div>
+<div class="lb" id="lb"><span class="close" id="lbClose">&times;</span><div class="inner"><div id="lbArt"></div><div class="cap"><h4 id="lbTitle"></h4><p id="lbYear"></p><a class="btn" href="#contact" id="lbInquire">Inquire about this work</a></div></div></div>
 
 <script>
 document.getElementById('yr').textContent=new Date().getFullYear();
@@ -463,17 +573,40 @@ const lb=document.getElementById('lb');
 document.querySelectorAll('.work').forEach(w=>w.onclick=()=>{
   const img=w.getAttribute('data-img');
   document.getElementById('lbArt').innerHTML='<img src="'+img+'" alt="" style="width:100%;display:block">';
-  document.getElementById('lbTitle').textContent=w.getAttribute('data-title');
+  lbWork=w.getAttribute('data-title');
+  document.getElementById('lbTitle').textContent=lbWork;
   document.getElementById('lbYear').textContent=w.getAttribute('data-year');
   lb.classList.add('open');
 });
 /* contact form -> opens email client with prefilled message */
+const MAIL='jorge@lavoygroup.com';
 const cf=document.getElementById('contactForm');
+function prefill(topic,msg){
+  if(!cf)return;
+  if(topic)cf.topic.value=topic;
+  if(msg&&!cf.message.value.trim())cf.message.value=msg;
+}
+document.querySelectorAll('[data-inquire]').forEach(a=>a.addEventListener('click',()=>{
+  const t=a.getAttribute('data-inquire');
+  prefill(t,t==='Commission'?'I would like to commission a session. Date: \nPreferred size: ':'');
+}));
+let lbWork='';
+document.getElementById('lbInquire').addEventListener('click',()=>{
+  lb.classList.remove('open');
+  prefill('Acquisition','I am interested in "'+lbWork+'". Please send size, availability and price.');
+});
 if(cf)cf.addEventListener('submit',e=>{
   e.preventDefault();
-  const n=cf.name.value.trim(),em=cf.email.value.trim(),m=cf.message.value.trim();
+  const n=cf.name.value.trim(),em=cf.email.value.trim(),t=cf.topic.value,m=cf.message.value.trim();
   const body=encodeURIComponent(m+'\n\n— '+n+' ('+em+')');
-  window.location.href='mailto:jorge@lavoygroup.com?subject='+encodeURIComponent('Website inquiry from '+n)+'&body='+body;
+  window.location.href='mailto:'+MAIL+'?subject='+encodeURIComponent(t+' inquiry from '+n)+'&body='+body;
+});
+/* collector list -> email request until a mailing service is connected */
+const lf=document.getElementById('listForm');
+if(lf)lf.addEventListener('submit',e=>{
+  e.preventDefault();
+  const em=lf.email.value.trim();
+  window.location.href='mailto:'+MAIL+'?subject='+encodeURIComponent('Collector list')+'&body='+encodeURIComponent('Please add me to the collector list: '+em);
 });
 
 document.getElementById('lbClose').onclick=()=>lb.classList.remove('open');
