@@ -199,7 +199,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
 <style>
 :root{
   --green:#0d5e04; --green-deep:#0a4a03; --ink:#161616; --paper:#faf9f5;
@@ -457,7 +457,7 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
 <a id="top"></a>
 <section class="hero">
   <div class="wrap hero-grid">
-    <div class="reveal">
+    <div>
       <span class="eyebrow">Havana &middot; 1988 &mdash; Florida</span>
       <h1>Jorge <em>Lavoy</em></h1>
       <p class="lead">Each work is a real market session &mdash; the fear, conviction and reversal of thousands of traders, distilled into geometry.</p>
@@ -467,8 +467,8 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
       </div>
       <div class="hero-loc">Visual artist &middot; Trained at the Escuela Nacional de Arte, Havana &middot; Based in Gainesville, North Florida</div>
     </div>
-    <figure class="reveal">
-      <div class="hero-art"><img src="images/portrait.jpg" alt="Portrait of Jorge Lavoy" style="width:100%;height:100%;object-fit:cover"></div>
+    <figure>
+      <div class="hero-art"><img src="images/portrait-1200.webp" srcset="images/portrait-700.webp 700w, images/portrait-1200.webp 1200w" sizes="(max-width: 900px) 100vw, 480px" width="1200" height="1200" fetchpriority="high" alt="Portrait of Jorge Lavoy" style="width:100%;height:100%;object-fit:cover"></div>
       <figcaption>Jorge Lavoy &mdash; Florida</figcaption>
     </figure>
   </div>
@@ -482,29 +482,29 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
       <p>Each work begins with a real trading session &mdash; a moment of structure, reaction, or reversal &mdash; distilled into geometric form in gold on a dark ground. Each title carries the market and date of the session it records. Click any piece to view it larger.</p>
     </div>
     <div class="gallery">
-      <div class="work reveal span2" data-img="images/gold-mar4.jpg" data-title="Gold — March 4, 2025" data-year="Acrylic on canvas · 10:30 AM UTC-4">
-        <img class="canvas" src="images/gold-mar4.jpg" alt="Gold — March 4, 2025" loading="lazy">
+      <div class="work reveal span2" data-img="images/gold-mar4.webp" data-title="Gold — March 4, 2025" data-year="Acrylic on canvas · 10:30 AM UTC-4">
+        <img class="canvas" src="images/gold-mar4-1000.webp" srcset="images/gold-mar4-1000.webp 1000w, images/gold-mar4.webp 2000w" sizes="(max-width: 700px) 100vw, 600px" width="1000" height="740" alt="Gold — March 4, 2025" loading="lazy">
         <span class="badge">Featured</span>
         <div class="label"><h4>Gold &mdash; March 4, 2025</h4><div class="yr">Acrylic on canvas &middot; 10:30 AM session</div><div class="avail">Inquire for availability</div></div>
       </div>
-      <div class="work reveal" data-img="images/gold-feb27.jpg" data-title="Break of Structure — Feb 27, 2025" data-year="Acrylic on canvas · 10:00 AM">
-        <img class="canvas" src="images/gold-feb27.jpg" alt="Break of Structure — Feb 27, 2025" loading="lazy">
+      <div class="work reveal" data-img="images/gold-feb27.webp" data-title="Break of Structure — Feb 27, 2025" data-year="Acrylic on canvas · 10:00 AM">
+        <img class="canvas" src="images/gold-feb27-1000.webp" srcset="images/gold-feb27-1000.webp 1000w, images/gold-feb27.webp 2000w" sizes="(max-width: 700px) 100vw, 600px" width="1000" height="768" alt="Break of Structure — Feb 27, 2025" loading="lazy">
         <div class="label"><h4>Break of Structure</h4><div class="yr">Feb 27, 2025 &middot; acrylic on canvas</div><div class="avail">Inquire for availability</div></div>
       </div>
-      <div class="work reveal" data-img="images/gold-may20.jpg" data-title="Gold — May 20, 2025" data-year="Acrylic on canvas · 10:00 AM UTC-4">
-        <img class="canvas" src="images/gold-may20.jpg" alt="Gold — May 20, 2025" loading="lazy">
+      <div class="work reveal" data-img="images/gold-may20.webp" data-title="Gold — May 20, 2025" data-year="Acrylic on canvas · 10:00 AM UTC-4">
+        <img class="canvas" src="images/gold-may20-1000.webp" srcset="images/gold-may20-1000.webp 1000w, images/gold-may20.webp 2000w" sizes="(max-width: 700px) 100vw, 600px" width="1000" height="776" alt="Gold — May 20, 2025" loading="lazy">
         <div class="label"><h4>Ascension</h4><div class="yr">May 20, 2025 &middot; acrylic on canvas</div><div class="avail">Inquire for availability</div></div>
       </div>
-      <div class="work reveal" data-img="images/gold-mar4-ny.jpg" data-title="Gold — March 4, 2025, NY Session" data-year="Acrylic on canvas">
-        <img class="canvas" src="images/gold-mar4-ny.jpg" alt="Gold — March 4, 2025, NY Session" loading="lazy">
+      <div class="work reveal" data-img="images/gold-mar4-ny.webp" data-title="Gold — March 4, 2025, NY Session" data-year="Acrylic on canvas">
+        <img class="canvas" src="images/gold-mar4-ny-1000.webp" srcset="images/gold-mar4-ny-1000.webp 1000w, images/gold-mar4-ny.webp 2000w" sizes="(max-width: 700px) 100vw, 600px" width="1000" height="773" alt="Gold — March 4, 2025, NY Session" loading="lazy">
         <div class="label"><h4>NY Session</h4><div class="yr">March 4, 2025 &middot; acrylic on canvas</div><div class="avail">Inquire for availability</div></div>
       </div>
-      <div class="work reveal" data-img="images/gold-may23.jpg" data-title="Gold — May 23, 2025" data-year="Acrylic on canvas · 10:17 AM UTC-4">
-        <img class="canvas" src="images/gold-may23.jpg" alt="Gold — May 23, 2025" loading="lazy">
+      <div class="work reveal" data-img="images/gold-may23.webp" data-title="Gold — May 23, 2025" data-year="Acrylic on canvas · 10:17 AM UTC-4">
+        <img class="canvas" src="images/gold-may23-1000.webp" srcset="images/gold-may23-1000.webp 1000w, images/gold-may23.webp 2000w" sizes="(max-width: 700px) 100vw, 600px" width="1000" height="776" alt="Gold — May 23, 2025" loading="lazy">
         <div class="label"><h4>Break-Even</h4><div class="yr">May 23, 2025 &middot; acrylic on canvas</div><div class="avail">Inquire for availability</div></div>
       </div>
-      <div class="work reveal" data-img="images/gold-jun5.jpg" data-title="Unemployment Claims Reaction — June 5, 2025" data-year="Acrylic on canvas · NY session">
-        <img class="canvas" src="images/gold-jun5.jpg" alt="Unemployment Claims Reaction — June 5, 2025" loading="lazy">
+      <div class="work reveal" data-img="images/gold-jun5.webp" data-title="Unemployment Claims Reaction — June 5, 2025" data-year="Acrylic on canvas · NY session">
+        <img class="canvas" src="images/gold-jun5-1000.webp" srcset="images/gold-jun5-1000.webp 1000w, images/gold-jun5.webp 2000w" sizes="(max-width: 700px) 100vw, 600px" width="1000" height="775" alt="Unemployment Claims Reaction — June 5, 2025" loading="lazy">
         <div class="label"><h4>Claims Reaction</h4><div class="yr">June 5, 2025 &middot; acrylic on canvas</div><div class="avail">Inquire for availability</div></div>
       </div>
     </div>
@@ -537,7 +537,7 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
       </div>
       <div class="reveal">
         <div class="analysis">
-          <img class="chart" src="images/gold-jun5.jpg" alt="Claims Reaction — June 5, 2025, acrylic on canvas" style="width:100%;display:block">
+          <img class="chart" loading="lazy" src="images/gold-jun5.webp" width="2000" height="1550" alt="Claims Reaction — June 5, 2025, acrylic on canvas" style="width:100%;display:block">
           <div class="cap">
             <div class="t">Claims Reaction &mdash; June 5, 2025</div>
             <div class="d">Painted from the gold futures session that followed the US unemployment claims release.</div>
