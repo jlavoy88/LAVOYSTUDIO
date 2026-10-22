@@ -25,7 +25,8 @@
   "image":"https://www.lavoystudio.com/images/portrait.jpg",
   "alumniOf":[{"@type":"EducationalOrganization","name":"Escuela Nacional de Arte (ENA), Havana"},{"@type":"EducationalOrganization","name":"Manuel Saumell Music School, Havana"}],
   "knowsAbout":["Painting","Sculpture","Contemporary art","Photography","Film","Futures trading","Financial markets"],
-  "sameAs":["https://www.instagram.com/lavoystudio"]
+  "sameAs":["https://www.instagram.com/lavoystudio"],
+  "subjectOf":[{"@type":"ExhibitionEvent","name":"Under the Spell of the Palm Tree: The Rice Collection of Cuban Art","location":"Harn Museum of Art, University of Florida","startDate":"2023-07-11","endDate":"2024-01-07","url":"https://harn.ufl.edu/exhibitions/under-the-spell"},{"@type":"ExhibitionEvent","name":"Under the Spell of the Palm Tree: The Rice Collection of Cuban Art","location":"Tampa Museum of Art","startDate":"2025-02-06","endDate":"2025-07-06","url":"https://tampamuseum.org/under-the-spell-of-the-palm-tree-the-rice-collection-of-cuban-art/"}]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -137,7 +138,8 @@ section{padding:96px 0}
 .exlist li .y{font-family:'Inter';font-weight:600;color:var(--ink);font-size:15px;flex:0 0 48px}
 .exlist li .v b{font-weight:600;font-size:15.5px;display:block}
 .exlist li .v span{font-size:13.5px;color:var(--muted)}
-.exlink b{border-bottom:1.5px solid var(--green)}
+.exlink{display:block}
+.exlist li .v .exlink b{display:inline;border-bottom:1.5px solid var(--green)}
 .exlink:hover b{color:var(--green)}
 
 /* FILMOGRAPHY */
@@ -377,7 +379,7 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
     <div class="sec-head reveal">
       <span class="num">03 / Exhibitions</span>
       <h2>Solo &amp; group shows</h2>
-      <p>Selected exhibitions across the United States, Cuba, Brazil, and Spain &mdash; from early photographic work in Havana to recent work in Miami.</p>
+      <p>Selected exhibitions across the United States, Cuba, Brazil and Spain, from early photographic work in Havana to museum presentations in Florida.</p>
     </div>
     <div class="exh-grid">
       <div class="exh reveal">
@@ -392,7 +394,9 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
       <div class="exh reveal">
         <h3>Group Shows</h3>
         <ul class="exlist">
+          <li><span class="y">2025</span><span class="v"><a class="exlink" href="https://tampamuseum.org/under-the-spell-of-the-palm-tree-the-rice-collection-of-cuban-art/" target="_blank" rel="noopener"><b>Under the Spell of the Palm Tree: The Rice Collection of Cuban Art &nearr;</b></a><span>Tampa Museum of Art &middot; Tampa, FL</span></span></li>
           <li><span class="y">2025</span><span class="v"><b>The New Gold Rush</b><span>Pan American Art Projects &middot; Miami, FL</span></span></li>
+          <li><span class="y">2023</span><span class="v"><a class="exlink" href="https://harn.ufl.edu/exhibitions/under-the-spell" target="_blank" rel="noopener"><b>Under the Spell of the Palm Tree: The Rice Collection of Cuban Art &nearr;</b></a><span>Harn Museum of Art, University of Florida &middot; Gainesville, FL &middot; Curated by Gabriela Azcuy and David Horta</span></span></li>
           <li><span class="y">2017</span><span class="v"><b>Scope Miami Beach</b><span>Havana Art Gallery &middot; Miami, FL</span></span></li>
           <li><span class="y">2016</span><span class="v"><b>The Art of the Collection and more</b><span>Kendall Art Center &middot; Miami, FL</span></span></li>
           <li><span class="y">2016</span><span class="v"><b>Untitled @ 888</b><span>888 Biscayne Blvd &middot; Miami, FL</span></span></li>
@@ -450,7 +454,14 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
           <div class="tl"><div class="yr">2010</div><div class="ev">First solo show, <b>Habana-Mirror</b>, at Centro Gallego de La Habana.</div></div>
           <div class="tl"><div class="yr">2013</div><div class="ev">Founds the audiovisual production company <b>Next Art Project</b>.</div></div>
           <div class="tl"><div class="yr">2019</div><div class="ev">Solo show <b>Point of Entry</b>; begins his <b>professional trading career</b> in futures markets.</div></div>
+          <div class="tl"><div class="yr">2023</div><div class="ev">Included in <b>Under the Spell of the Palm Tree: The Rice Collection of Cuban Art</b> at the Harn Museum of Art, University of Florida; travels to the Tampa Museum of Art in 2025.</div></div>
           <div class="tl"><div class="yr">2025</div><div class="ev">Group show <b>The New Gold Rush</b>, Pan American Art Projects, Miami &mdash; uniting art and futures trading.</div></div>
+        </div>
+        <div class="edu">
+          <h3>Collections</h3>
+          <ul>
+            <li><b>The Rice Collection of Cuban Art</b> &mdash; Susie and Mitchell Rice <span>&middot; USA</span></li>
+          </ul>
         </div>
         <div class="edu">
           <h3>Education</h3>
