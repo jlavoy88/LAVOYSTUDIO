@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jorge Lavoy — Cuban Artist in Gainesville, North Florida · Market Sentiment</title>
+<title>Jorge Lavoy — Cuban Artist, Filmmaker &amp; Actor · Gainesville, North Florida</title>
 <meta name="description" content="Jorge Lavoy (b. 1988, Havana) is a Cuban artist based in Gainesville, Florida, shown at the Harn and Tampa museums. Known in Cuba as an actor and as host of Colorama.">
 <link rel="canonical" href="https://lavoystudio.com/">
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
 <link rel="alternate" hreflang="es" href="https://lavoystudio.com/actor/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Jorge Lavoy — Market Sentiment">
-<meta property="og:description" content="Artworks made from real futures market sessions. Havana-trained artist and professional trader, based in Gainesville, Florida.">
+<meta property="og:title" content="Jorge Lavoy — Cuban artist, filmmaker and actor">
+<meta property="og:description" content="Havana-born multidisciplinary artist based in Gainesville, Florida: painting, sculpture, film and performance. In the Rice Collection of Cuban Art; shown at the Harn and Tampa museums.">
 <meta property="og:url" content="https://lavoystudio.com/">
-<meta property="og:image" content="https://lavoystudio.com/images/gold-mar4.jpg">
+<meta property="og:image" content="https://lavoystudio.com/images/portrait.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
 {
@@ -238,7 +238,7 @@ header.scrolled{border-color:var(--line)}
 /* HERO */
 .hero{padding:150px 0 90px;position:relative;overflow:hidden}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
-.hero h1{font-size:12px;font-weight:600;margin-bottom:clamp(70px,14vh,130px)}
+.hero h1{font-size:clamp(52px,7.4vw,104px);font-weight:300;letter-spacing:-.025em;line-height:1;margin:18px 0 0}
 .hero h1 em{font-style:normal;color:inherit}
 .hero .roles{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 20px}
 .tag{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);padding:6px 13px;border-radius:40px;background:#fff}
@@ -247,6 +247,26 @@ header.scrolled{border-color:var(--line)}
 .hero-loc{margin-top:28px;font-size:13px;letter-spacing:.04em;color:var(--muted)}
 .hero-art{border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#101010;aspect-ratio:4/5;box-shadow:0 30px 60px -30px rgba(0,0,0,.4)}
 .hero-art figcaption{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:10px 4px 0;text-align:right}
+
+/* PRACTICE */
+.practice{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+.pcard{display:block;border:1px solid var(--line);border-radius:3px;overflow:hidden;background:#fff;transition:.3s}
+.pcard:hover{transform:translateY(-4px);box-shadow:0 22px 40px -24px rgba(0,0,0,.35)}
+.pcard .pimg{aspect-ratio:16/10;background:#101010;overflow:hidden}
+.pcard .pimg img{width:100%;height:100%;object-fit:cover}
+.pcard .pbody{padding:20px 22px 22px}
+.pcard .k{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);font-weight:600}
+.pcard h3{font-size:22px;margin:8px 0 8px}
+.pcard p{font-size:15px;color:#3d3d38}
+.pcard .go{display:inline-block;margin-top:12px;font-size:13.5px;font-weight:500;border-bottom:1.5px solid var(--green);padding-bottom:1px}
+.pcard.dark{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.pcard.dark .pimg{display:flex;align-items:flex-end;padding:26px;background:#101010}
+.pcard.dark .pimg span{font-size:clamp(22px,2.6vw,30px);font-weight:300;line-height:1.25;color:#fff}
+.pcard.dark .pimg span i{color:var(--gold-soft)}
+.pcard.dark .k{color:var(--gold-soft)}
+.pcard.dark p{color:#c9c9c0}
+.pcard.dark .go{border-color:var(--gold-soft)}
+@media(max-width:760px){.practice{grid-template-columns:minmax(0,1fr)}}
 
 /* SECTION */
 section{padding:96px 0}
@@ -444,12 +464,11 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
     </a>
     <button class="menu-btn" id="menuBtn" aria-label="Menu">&#9776;</button>
     <nav class="nav-links" id="navLinks">
-      <a href="#work">Work</a>
-      <a href="#method">Method</a>
-      <a href="#exhibitions">Exhibitions</a>
-      <a href="#press">Press</a>
-      <a href="film/">Film</a>
       <a href="#about">About</a>
+      <a href="#exhibitions">Exhibitions</a>
+      <a href="#work">Market Sentiment</a>
+      <a href="film/">Film</a>
+      <a href="#press">Press</a>
       <a class="nav-cta" href="#contact">Inquire</a>
     </nav>
   </div>
@@ -461,12 +480,13 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
     <div>
       <span class="eyebrow">Havana &middot; 1988 &mdash; Florida</span>
       <h1>Jorge <em>Lavoy</em></h1>
-      <p class="lead">Each work is a real market session &mdash; the fear, conviction and reversal of thousands of traders, distilled into geometry.</p>
+      <div class="roles"><span class="tag">Artist</span><span class="tag">Filmmaker</span><span class="tag">Actor</span><span class="tag">Curator</span><span class="tag">Futures trader</span></div>
+      <p class="lead">Cuban multidisciplinary artist working across painting, sculpture, installation, film and performance &mdash; from Havana&rsquo;s stages and television screens to museum exhibitions in Florida. His work is in the Rice Collection of Cuban Art and has been shown at the Harn Museum of Art and the Tampa Museum of Art.</p>
       <div class="hero-cta">
-        <a class="btn btn-solid" href="#work">View the work</a>
-        <a class="btn btn-ghost" href="#contact">Inquire</a>
+        <a class="btn btn-solid" href="#practice">Explore the work</a>
+        <a class="btn btn-ghost" href="#about">About Jorge</a>
       </div>
-      <div class="hero-loc">Visual artist &middot; Trained at the Escuela Nacional de Arte, Havana &middot; Based in Gainesville, North Florida</div>
+      <div class="hero-loc">Trained at the Escuela Nacional de Arte, Havana &middot; Based in Gainesville, North Florida</div>
     </div>
     <figure>
       <div class="hero-art"><img src="images/portrait-1200.webp" srcset="images/portrait-700.webp 700w, images/portrait-1200.webp 1200w" sizes="(max-width: 900px) 100vw, 480px" width="1200" height="1200" fetchpriority="high" alt="Portrait of Jorge Lavoy" style="width:100%;height:100%;object-fit:cover"></div>
@@ -475,74 +495,71 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
   </div>
 </section>
 
-<section id="work">
+<section id="practice">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="num">01 / Selected Work</span>
-      <h2>Market Sentiment</h2>
-      <p>Each work begins with a real trading session &mdash; a moment of structure, reaction, or reversal &mdash; distilled into geometric form in gold on a dark ground. Each title carries the market and date of the session it records. Click any piece to view it larger.</p>
+      <span class="num">01 / Practice</span>
+      <h2>One practice, many forms</h2>
+      <p>Trained in music and theater in Havana, Lavoy works wherever the idea needs to go &mdash; the canvas, the gallery, the camera or the stage.</p>
     </div>
-    <div class="gallery">
-      <div class="work reveal span2" data-img="images/gold-mar4.webp" data-title="Gold — March 4, 2025" data-year="Acrylic on canvas · 10:30 AM UTC-4">
-        <img class="canvas" src="images/gold-mar4-1000.webp" srcset="images/gold-mar4-1000.webp 1000w, images/gold-mar4.webp 2000w" sizes="(max-width: 700px) 100vw, 600px" width="1000" height="740" alt="Gold — March 4, 2025" loading="lazy">
-        <span class="badge">Featured</span>
-        <div class="label"><h4>Gold &mdash; March 4, 2025</h4><div class="yr">Acrylic on canvas &middot; 10:30 AM session</div><div class="avail">Inquire for availability</div></div>
-      </div>
-      <div class="work reveal" data-img="images/gold-feb27.webp" data-title="Break of Structure — Feb 27, 2025" data-year="Acrylic on canvas · 10:00 AM">
-        <img class="canvas" src="images/gold-feb27-1000.webp" srcset="images/gold-feb27-1000.webp 1000w, images/gold-feb27.webp 2000w" sizes="(max-width: 700px) 100vw, 600px" width="1000" height="768" alt="Break of Structure — Feb 27, 2025" loading="lazy">
-        <div class="label"><h4>Break of Structure</h4><div class="yr">Feb 27, 2025 &middot; acrylic on canvas</div><div class="avail">Inquire for availability</div></div>
-      </div>
-      <div class="work reveal" data-img="images/gold-may20.webp" data-title="Gold — May 20, 2025" data-year="Acrylic on canvas · 10:00 AM UTC-4">
-        <img class="canvas" src="images/gold-may20-1000.webp" srcset="images/gold-may20-1000.webp 1000w, images/gold-may20.webp 2000w" sizes="(max-width: 700px) 100vw, 600px" width="1000" height="776" alt="Gold — May 20, 2025" loading="lazy">
-        <div class="label"><h4>Ascension</h4><div class="yr">May 20, 2025 &middot; acrylic on canvas</div><div class="avail">Inquire for availability</div></div>
-      </div>
-      <div class="work reveal" data-img="images/gold-mar4-ny.webp" data-title="Gold — March 4, 2025, NY Session" data-year="Acrylic on canvas">
-        <img class="canvas" src="images/gold-mar4-ny-1000.webp" srcset="images/gold-mar4-ny-1000.webp 1000w, images/gold-mar4-ny.webp 2000w" sizes="(max-width: 700px) 100vw, 600px" width="1000" height="773" alt="Gold — March 4, 2025, NY Session" loading="lazy">
-        <div class="label"><h4>NY Session</h4><div class="yr">March 4, 2025 &middot; acrylic on canvas</div><div class="avail">Inquire for availability</div></div>
-      </div>
-      <div class="work reveal" data-img="images/gold-may23.webp" data-title="Gold — May 23, 2025" data-year="Acrylic on canvas · 10:17 AM UTC-4">
-        <img class="canvas" src="images/gold-may23-1000.webp" srcset="images/gold-may23-1000.webp 1000w, images/gold-may23.webp 2000w" sizes="(max-width: 700px) 100vw, 600px" width="1000" height="776" alt="Gold — May 23, 2025" loading="lazy">
-        <div class="label"><h4>Break-Even</h4><div class="yr">May 23, 2025 &middot; acrylic on canvas</div><div class="avail">Inquire for availability</div></div>
-      </div>
-      <div class="work reveal" data-img="images/gold-jun5.webp" data-title="Unemployment Claims Reaction — June 5, 2025" data-year="Acrylic on canvas · NY session">
-        <img class="canvas" src="images/gold-jun5-1000.webp" srcset="images/gold-jun5-1000.webp 1000w, images/gold-jun5.webp 2000w" sizes="(max-width: 700px) 100vw, 600px" width="1000" height="775" alt="Unemployment Claims Reaction — June 5, 2025" loading="lazy">
-        <div class="label"><h4>Claims Reaction</h4><div class="yr">June 5, 2025 &middot; acrylic on canvas</div><div class="avail">Inquire for availability</div></div>
-      </div>
-    </div>
-    <div class="work-cta reveal">
-      <a class="btn btn-solid" href="#contact" data-inquire="Acquisition">Inquire about a work</a>
-      <p>Each work ships with a signed certificate of authenticity.</p>
+    <div class="practice">
+      <a class="pcard reveal" href="exhibitions/under-the-spell/">
+        <div class="pimg"><img loading="lazy" src="images/under-the-spell/the-river.webp" alt="The River, from the series Color Girl, by Jorge Lavoy"></div>
+        <div class="pbody"><div class="k">Artwork</div><h3>Painting, sculpture &amp; installation</h3><p><em>The River</em>, from the series <em>Color Girl</em> (2014&ndash;2015), is in the Rice Collection of Cuban Art and was shown at the Harn and Tampa museums.</p><span class="go">The River &rarr;</span></div>
+      </a>
+      <a class="pcard reveal" href="#exhibitions">
+        <div class="pimg"><img loading="lazy" src="images/empty-space/gallery-view.webp" alt="Empty Space by Jorge Lavoy, Kendall Art Center, Miami"></div>
+        <div class="pbody"><div class="k">Exhibitions &amp; curating</div><h3>Havana, Miami, Gainesville</h3><p>Solo shows <em>Sensus</em> (F&aacute;brica de Arte Cubano, 2014) and <em>Empty Space</em> (Kendall Art Center, 2017); co-curator of <em>Cuban Ingenuity</em> at the Cade Museum (2019).</p><span class="go">Exhibitions &rarr;</span></div>
+      </a>
+      <a class="pcard reveal" href="film/">
+        <div class="pimg"><img loading="lazy" src="https://i.ytimg.com/vi/RN5i_wK47ig/hqdefault.jpg" alt="Still from Artxiomas, a film by Jorge Lavoy"></div>
+        <div class="pbody"><div class="k">Film &amp; video</div><h3>Next Art Project</h3><p>Exhibition films for the Kennedy Center, the Art Museum of the Americas and the Cade Museum, making-of films for musicians and artists, and aerial work in North Florida.</p><span class="go">Watch the films &rarr;</span></div>
+      </a>
+      <a class="pcard dark reveal" href="#screen">
+        <div class="pimg"><span><i>Salir de Noche</i> &middot; <i>Tierras de Fuego</i> &middot; <i>Colorama</i> &middot; <i>Cuba Libre</i></span></div>
+        <div class="pbody"><div class="k">Stage &amp; screen</div><h3>Actor &amp; television host</h3><p>A childhood debut on Cuban television, leading roles in telenovelas and TV plays, and years as host of the music-video program <em>Colorama</em> on Canal Habana.</p><span class="go">Career &rarr;</span></div>
+      </a>
     </div>
   </div>
 </section>
 
-<section id="method" class="feature">
+<section id="about" class="feature">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="num">02 / The Method</span>
-      <h2>From session to form</h2>
-      <p>Lavoy has traded futures professionally since 2019, across metals, energy and equity index markets. The sessions he trades are the raw material for the work: a market's collective emotion, recorded as structure.</p>
+      <span class="num">02 / About</span>
+      <h2>Jorge Ricardo Lavoy Miguel</h2>
     </div>
-    <div class="trade-grid">
-      <div class="reveal">
-        <ol class="steps">
-          <li><div><b>The session.</b> A single trading window &mdash; an open, a news release, a reversal &mdash; chosen for the tension it held.</div></li>
-          <li><div><b>The structure.</b> Highs, lows, breaks and pauses are read from the chart and reduced to their geometry.</div></li>
-          <li><div><b>The work.</b> That geometry is made by hand, as painting or sculpture, and titled with the date and time of the session.</div></li>
-        </ol>
-        <ul class="approach">
-          <li><span></span><div><b>Rhythm over noise.</b> Where price pauses, accelerates and reverses.</div></li>
-          <li><span></span><div><b>Sentiment as form.</b> Collective fear and conviction made visible.</div></li>
-          <li><span></span><div><b>A record, not a prediction.</b> Each work documents a moment that already happened.</div></li>
-        </ul>
-      </div>
-      <div class="reveal">
-        <div class="analysis">
-          <img class="chart" loading="lazy" src="images/gold-jun5.webp" width="2000" height="1550" alt="Claims Reaction — June 5, 2025, acrylic on canvas" style="width:100%;display:block">
-          <div class="cap">
-            <div class="t">Claims Reaction &mdash; June 5, 2025</div>
-            <div class="d">Painted from the gold futures session that followed the US unemployment claims release.</div>
-          </div>
+    <div class="about-grid">
+      <div class="reveal bio">
+        <p>Jorge Lavoy (b. 1988, Havana, Cuba) is a multidisciplinary artist based in Gainesville, in North Florida. He graduated from the Manuel Saumell music school as a drummer and from the Escuela Nacional de Arte (ENA) in theater. From this foundation in music and performance, Lavoy has expanded his practice to encompass painting, documentary and fine-art photography, film, television, music, mixed media, installation, and sculpture &mdash; an ongoing exploration of form and narrative across disciplines.</p>
+        <p>His parallel life as a financial trader gives the work its most distinctive thread: works in which a real market session is transformed into abstract form. It is a practice built on observation &mdash; of people, of screens, of the collective emotion that moves both audiences and markets.</p>
+        <div class="timeline">
+          <div class="tl"><div class="yr">1988</div><div class="ev">Born in <b>Havana, Cuba</b>.</div></div>
+          <div class="tl"><div class="yr">1997&ndash;2003</div><div class="ev">Graduates from the <b>Manuel Saumell</b> music school as a <b>drummer</b>.</div></div>
+          <div class="tl"><div class="yr">2002&ndash;03</div><div class="ev">Plays the Chuly in the telenovela <b>Salir de Noche</b> on Cubavisi&oacute;n.</div></div>
+          <div class="tl"><div class="yr">2003&ndash;2007</div><div class="ev">Studies theater at the <b>Escuela Nacional de Arte (ENA)</b>, Havana.</div></div>
+          <div class="tl"><div class="yr">2010</div><div class="ev">First solo show, <b>Habana-Mirror</b>, at Centro Gallego de La Habana.</div></div>
+          <div class="tl"><div class="yr">2013</div><div class="ev">Founds the audiovisual production company <b>Next Art Project</b>.</div></div>
+          <div class="tl"><div class="yr">2019</div><div class="ev">Co-curates <b>Cuban Ingenuity</b> with Gabriela Azcuy at the Cade Museum for Creativity and Invention, Gainesville.</div></div>
+          <div class="tl"><div class="yr">2019</div><div class="ev">Solo show <b>Point of Entry</b>; begins his <b>professional trading career</b> in futures markets.</div></div>
+          <div class="tl"><div class="yr">2023</div><div class="ev">Included in <b>Under the Spell of the Palm Tree: The Rice Collection of Cuban Art</b> at the Harn Museum of Art, University of Florida; travels to the Tampa Museum of Art in 2025.</div></div>
+          <div class="tl"><div class="yr">2025</div><div class="ev">Group show <b>The New Gold Rush</b>, Pan American Art Projects, Miami &mdash; uniting art and futures trading.</div></div>
+        </div>
+        <div class="edu">
+          <h3>Collections</h3>
+          <ul>
+            <li><b>The Rice Collection of Cuban Art</b> &mdash; Susie and Mitchell Rice: <a href="exhibitions/under-the-spell/" style="border-bottom:1px solid var(--green)"><em>The River</em>, from the series <em>Color Girl</em> (2014&ndash;2015)</a></li>
+          </ul>
+        </div>
+        <div class="edu">
+          <h3>Education</h3>
+          <ul>
+            <li><b>Escuela Nacional de Arte (ENA)</b> &mdash; Theater <span>&middot; Havana, 2003&ndash;2007</span></li>
+            <li><b>Manuel Saumell Music School</b> &mdash; Drums <span>&middot; Havana, 1997&ndash;2003</span></li>
+            <li><b>The Wharton School, University of Pennsylvania</b> &mdash; Digital Marketing <span>&middot; USA</span></li>
+            <li><b>The Wharton School, University of Pennsylvania</b> &mdash; Social Media &amp; Web <span>&middot; USA</span></li>
+            <li><b>Workshops</b> &mdash; Theatrical Masks (Casa Gaia, Havana); Photography with Mimmo Fabrizi <span>&middot; Havana</span></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -590,10 +607,84 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
   </div>
 </section>
 
+<section id="work" class="feature">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="num">04 / Current Series</span>
+      <h2>Market Sentiment</h2>
+      <p>Each work begins with a real trading session &mdash; a moment of structure, reaction, or reversal &mdash; distilled into geometric form in gold on a dark ground. Each title carries the market and date of the session it records. Click any piece to view it larger.</p>
+    </div>
+    <div class="gallery">
+      <div class="work reveal span2" data-img="images/gold-mar4.webp" data-title="Gold — March 4, 2025" data-year="Acrylic on canvas · 10:30 AM UTC-4">
+        <img class="canvas" src="images/gold-mar4-1000.webp" srcset="images/gold-mar4-1000.webp 1000w, images/gold-mar4.webp 2000w" sizes="(max-width: 700px) 100vw, 600px" width="1000" height="740" alt="Gold — March 4, 2025" loading="lazy">
+        <span class="badge">Featured</span>
+        <div class="label"><h4>Gold &mdash; March 4, 2025</h4><div class="yr">Acrylic on canvas &middot; 10:30 AM session</div><div class="avail">Inquire for availability</div></div>
+      </div>
+      <div class="work reveal" data-img="images/gold-feb27.webp" data-title="Break of Structure — Feb 27, 2025" data-year="Acrylic on canvas · 10:00 AM">
+        <img class="canvas" src="images/gold-feb27-1000.webp" srcset="images/gold-feb27-1000.webp 1000w, images/gold-feb27.webp 2000w" sizes="(max-width: 700px) 100vw, 600px" width="1000" height="768" alt="Break of Structure — Feb 27, 2025" loading="lazy">
+        <div class="label"><h4>Break of Structure</h4><div class="yr">Feb 27, 2025 &middot; acrylic on canvas</div><div class="avail">Inquire for availability</div></div>
+      </div>
+      <div class="work reveal" data-img="images/gold-may20.webp" data-title="Gold — May 20, 2025" data-year="Acrylic on canvas · 10:00 AM UTC-4">
+        <img class="canvas" src="images/gold-may20-1000.webp" srcset="images/gold-may20-1000.webp 1000w, images/gold-may20.webp 2000w" sizes="(max-width: 700px) 100vw, 600px" width="1000" height="776" alt="Gold — May 20, 2025" loading="lazy">
+        <div class="label"><h4>Ascension</h4><div class="yr">May 20, 2025 &middot; acrylic on canvas</div><div class="avail">Inquire for availability</div></div>
+      </div>
+      <div class="work reveal" data-img="images/gold-mar4-ny.webp" data-title="Gold — March 4, 2025, NY Session" data-year="Acrylic on canvas">
+        <img class="canvas" src="images/gold-mar4-ny-1000.webp" srcset="images/gold-mar4-ny-1000.webp 1000w, images/gold-mar4-ny.webp 2000w" sizes="(max-width: 700px) 100vw, 600px" width="1000" height="773" alt="Gold — March 4, 2025, NY Session" loading="lazy">
+        <div class="label"><h4>NY Session</h4><div class="yr">March 4, 2025 &middot; acrylic on canvas</div><div class="avail">Inquire for availability</div></div>
+      </div>
+      <div class="work reveal" data-img="images/gold-may23.webp" data-title="Gold — May 23, 2025" data-year="Acrylic on canvas · 10:17 AM UTC-4">
+        <img class="canvas" src="images/gold-may23-1000.webp" srcset="images/gold-may23-1000.webp 1000w, images/gold-may23.webp 2000w" sizes="(max-width: 700px) 100vw, 600px" width="1000" height="776" alt="Gold — May 23, 2025" loading="lazy">
+        <div class="label"><h4>Break-Even</h4><div class="yr">May 23, 2025 &middot; acrylic on canvas</div><div class="avail">Inquire for availability</div></div>
+      </div>
+      <div class="work reveal" data-img="images/gold-jun5.webp" data-title="Unemployment Claims Reaction — June 5, 2025" data-year="Acrylic on canvas · NY session">
+        <img class="canvas" src="images/gold-jun5-1000.webp" srcset="images/gold-jun5-1000.webp 1000w, images/gold-jun5.webp 2000w" sizes="(max-width: 700px) 100vw, 600px" width="1000" height="775" alt="Unemployment Claims Reaction — June 5, 2025" loading="lazy">
+        <div class="label"><h4>Claims Reaction</h4><div class="yr">June 5, 2025 &middot; acrylic on canvas</div><div class="avail">Inquire for availability</div></div>
+      </div>
+    </div>
+    <div class="work-cta reveal">
+      <a class="btn btn-solid" href="#contact" data-inquire="Acquisition">Inquire about a work</a>
+      <p>Each work ships with a signed certificate of authenticity.</p>
+    </div>
+  </div>
+</section>
+
+<section id="method">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="num">05 / The Method</span>
+      <h2>From session to form</h2>
+      <p>Lavoy has traded futures professionally since 2019, across metals, energy and equity index markets. The sessions he trades are the raw material for the work: a market's collective emotion, recorded as structure.</p>
+    </div>
+    <div class="trade-grid">
+      <div class="reveal">
+        <ol class="steps">
+          <li><div><b>The session.</b> A single trading window &mdash; an open, a news release, a reversal &mdash; chosen for the tension it held.</div></li>
+          <li><div><b>The structure.</b> Highs, lows, breaks and pauses are read from the chart and reduced to their geometry.</div></li>
+          <li><div><b>The work.</b> That geometry is made by hand, as painting or sculpture, and titled with the date and time of the session.</div></li>
+        </ol>
+        <ul class="approach">
+          <li><span></span><div><b>Rhythm over noise.</b> Where price pauses, accelerates and reverses.</div></li>
+          <li><span></span><div><b>Sentiment as form.</b> Collective fear and conviction made visible.</div></li>
+          <li><span></span><div><b>A record, not a prediction.</b> Each work documents a moment that already happened.</div></li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <div class="analysis">
+          <img class="chart" loading="lazy" src="images/gold-jun5.webp" width="2000" height="1550" alt="Claims Reaction — June 5, 2025, acrylic on canvas" style="width:100%;display:block">
+          <div class="cap">
+            <div class="t">Claims Reaction &mdash; June 5, 2025</div>
+            <div class="d">Painted from the gold futures session that followed the US unemployment claims release.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="press" class="feature">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="num">04 / Press &amp; Publications</span>
+      <span class="num">06 / Press &amp; Publications</span>
       <h2>Writing and coverage</h2>
     </div>
     <div class="exh-grid">
@@ -630,7 +721,7 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
 <section id="screen" class="screen">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="num">05 / Stage &amp; Screen</span>
+      <span class="num">07 / Stage &amp; Screen</span>
       <h2>A career in Cuban television &amp; cinema</h2>
       <p>From a childhood debut through leading roles in film, television drama, and national TV presenting &mdash; built on theater training at the Escuela Nacional de Arte (ENA), Havana.</p>
     </div>
@@ -663,53 +754,10 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
   </div>
 </section>
 
-<section id="about">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="num">06 / About</span>
-      <h2>Jorge Ricardo Lavoy Miguel</h2>
-    </div>
-    <div class="about-grid">
-      <div class="reveal bio">
-        <p>Jorge Lavoy (b. 1988, Havana, Cuba) is a multidisciplinary artist based in Gainesville, in North Florida. He graduated from the Manuel Saumell music school as a drummer and from the Escuela Nacional de Arte (ENA) in theater. From this foundation in music and performance, Lavoy has expanded his practice to encompass painting, documentary and fine-art photography, film, television, music, mixed media, installation, and sculpture &mdash; an ongoing exploration of form and narrative across disciplines.</p>
-        <p>His parallel life as a financial trader gives the work its most distinctive thread: works in which a real market session is transformed into abstract form. It is a practice built on observation &mdash; of people, of screens, of the collective emotion that moves both audiences and markets.</p>
-        <div class="timeline">
-          <div class="tl"><div class="yr">1988</div><div class="ev">Born in <b>Havana, Cuba</b>.</div></div>
-          <div class="tl"><div class="yr">1997&ndash;2003</div><div class="ev">Graduates from the <b>Manuel Saumell</b> music school as a <b>drummer</b>.</div></div>
-          <div class="tl"><div class="yr">2002&ndash;03</div><div class="ev">Plays the Chuly in the telenovela <b>Salir de Noche</b> on Cubavisi&oacute;n.</div></div>
-          <div class="tl"><div class="yr">2003&ndash;2007</div><div class="ev">Studies theater at the <b>Escuela Nacional de Arte (ENA)</b>, Havana.</div></div>
-          <div class="tl"><div class="yr">2010</div><div class="ev">First solo show, <b>Habana-Mirror</b>, at Centro Gallego de La Habana.</div></div>
-          <div class="tl"><div class="yr">2013</div><div class="ev">Founds the audiovisual production company <b>Next Art Project</b>.</div></div>
-          <div class="tl"><div class="yr">2019</div><div class="ev">Co-curates <b>Cuban Ingenuity</b> with Gabriela Azcuy at the Cade Museum for Creativity and Invention, Gainesville.</div></div>
-          <div class="tl"><div class="yr">2019</div><div class="ev">Solo show <b>Point of Entry</b>; begins his <b>professional trading career</b> in futures markets.</div></div>
-          <div class="tl"><div class="yr">2023</div><div class="ev">Included in <b>Under the Spell of the Palm Tree: The Rice Collection of Cuban Art</b> at the Harn Museum of Art, University of Florida; travels to the Tampa Museum of Art in 2025.</div></div>
-          <div class="tl"><div class="yr">2025</div><div class="ev">Group show <b>The New Gold Rush</b>, Pan American Art Projects, Miami &mdash; uniting art and futures trading.</div></div>
-        </div>
-        <div class="edu">
-          <h3>Collections</h3>
-          <ul>
-            <li><b>The Rice Collection of Cuban Art</b> &mdash; Susie and Mitchell Rice: <a href="exhibitions/under-the-spell/" style="border-bottom:1px solid var(--green)"><em>The River</em>, from the series <em>Color Girl</em> (2014&ndash;2015)</a></li>
-          </ul>
-        </div>
-        <div class="edu">
-          <h3>Education</h3>
-          <ul>
-            <li><b>Escuela Nacional de Arte (ENA)</b> &mdash; Theater <span>&middot; Havana, 2003&ndash;2007</span></li>
-            <li><b>Manuel Saumell Music School</b> &mdash; Drums <span>&middot; Havana, 1997&ndash;2003</span></li>
-            <li><b>The Wharton School, University of Pennsylvania</b> &mdash; Digital Marketing <span>&middot; USA</span></li>
-            <li><b>The Wharton School, University of Pennsylvania</b> &mdash; Social Media &amp; Web <span>&middot; USA</span></li>
-            <li><b>Workshops</b> &mdash; Theatrical Masks (Casa Gaia, Havana); Photography with Mimmo Fabrizi <span>&middot; Havana</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="contact" class="contact">
   <div class="wrap contact-grid">
     <div class="reveal">
-      <span class="num">07 / Contact</span>
+      <span class="num">08 / Contact</span>
       <h2>Inquire</h2>
       <p style="font-size:17px;color:#3d3d38;margin-bottom:22px">For acquisitions, exhibitions and curatorial projects, and press. Studio visits by appointment.</p>
       <div style="font-size:14px;color:var(--muted)">Florida &middot; United States</div>
@@ -751,7 +799,7 @@ footer{background:var(--ink);color:#cfcfc6;padding:54px 0 34px}
         <svg viewBox="-60 -60 700 440" style="height:30px" aria-hidden="true"><g fill="none" stroke="#2f8a23" stroke-width="120"><polyline points="60 0 60 260.11 420 260.11 420 80.11 240 80.11"/><polyline points="580 320.33 580 60.11 220 60.11 220 240.11 400 240.11"/></g></svg>
       </a>
       <div class="foot-links">
-        <a href="#work">Work</a><a href="#method">Method</a><a href="#exhibitions">Exhibitions</a><a href="#press">Press</a><a href="#screen">Screen</a><a href="film/">Film &amp; Video</a><a href="#about">About</a><a href="#contact">Inquire</a><a href="https://www.instagram.com/lavoystudio" target="_blank" rel="noopener">Instagram</a>
+        <a href="#about">About</a><a href="#exhibitions">Exhibitions</a><a href="#work">Market Sentiment</a><a href="#method">Method</a><a href="film/">Film &amp; Video</a><a href="#press">Press</a><a href="#screen">Screen</a><a href="#contact">Inquire</a><a href="https://www.instagram.com/lavoystudio" target="_blank" rel="noopener">Instagram</a>
       </div>
     </div>
     <p class="fdisc">Artworks are based on historical market sessions and are not financial advice or a solicitation of any kind. All artwork and images &copy; Jorge Lavoy.</p>
